@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>72990C0B-F2B2-4AF6-BCFE-E18429BF16A8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyLocations</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0FAC76334BE1468661971546222B1A587B20B409</key>
+		<string>https://github.com/manne1243/5373-Swift-Programming-manne1243.git</string>
+		<key>1209B2A30B1DA1FF94CCA92428D258D39D448F96</key>
+		<string>https://github.com/rugbyprof/5373-Swift-Programming.git</string>
+		<key>4D90F4A586719E76FDE6164825AE96A8505E529D</key>
+		<string>https://github.com/manne1243/5373-Swift-Programming-manne1243.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyLocations.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0FAC76334BE1468661971546222B1A587B20B409</key>
+		<string>../..</string>
+		<key>1209B2A30B1DA1FF94CCA92428D258D39D448F96</key>
+		<string>../../..</string>
+		<key>4D90F4A586719E76FDE6164825AE96A8505E529D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/manne1243/5373-Swift-Programming-manne1243.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0FAC76334BE1468661971546222B1A587B20B409</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4D90F4A586719E76FDE6164825AE96A8505E529D</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1209B2A30B1DA1FF94CCA92428D258D39D448F96</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0FAC76334BE1468661971546222B1A587B20B409</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyLocations</string>
+		</dict>
+	</array>
+</dict>
+</plist>
