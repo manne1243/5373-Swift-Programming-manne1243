@@ -13,10 +13,10 @@
 		85AC48E11A8ABAEC005DE77C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85AC48DF1A8ABAEC005DE77C /* LaunchScreen.xib */; };
 		85AC48ED1A8ABAEC005DE77C /* Program_1_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC48EC1A8ABAEC005DE77C /* Program_1_StarterTests.swift */; };
 		85AC48FC1A8ABBDD005DE77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AC48FB1A8ABBDD005DE77C /* Main.storyboard */; };
-		85AC48FE1A8ABC45005DE77C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC48FD1A8ABC45005DE77C /* SwiftyJSON.swift */; };
-		85AC49001A8ABC4C005DE77C /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AC48FF1A8ABC4C005DE77C /* Alamofire.swift */; };
 		85AC49021A8ABC86005DE77C /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AC49011A8ABC86005DE77C /* colors.json */; };
 		85DD06121AA1404200401830 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD06111AA1404200401830 /* Colors.swift */; };
+		FEA502AE1AE4892A00451891 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA502AC1AE4892A00451891 /* Alamofire.swift */; };
+		FEA502AF1AE4892A00451891 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA502AD1AE4892A00451891 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,10 @@
 		85AC48EB1A8ABAEC005DE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85AC48EC1A8ABAEC005DE77C /* Program_1_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program_1_StarterTests.swift; sourceTree = "<group>"; };
 		85AC48FB1A8ABBDD005DE77C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		85AC48FD1A8ABC45005DE77C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		85AC48FF1A8ABC4C005DE77C /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		85AC49011A8ABC86005DE77C /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = colors.json; path = Program_1_Starter/colors.json; sourceTree = SOURCE_ROOT; };
 		85DD06111AA1404200401830 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = ../Colors.swift; sourceTree = "<group>"; };
+		FEA502AC1AE4892A00451891 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		FEA502AD1AE4892A00451891 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				85DD06111AA1404200401830 /* Colors.swift */,
-				85AC48FF1A8ABC4C005DE77C /* Alamofire.swift */,
-				85AC48FD1A8ABC45005DE77C /* SwiftyJSON.swift */,
+				FEA502AC1AE4892A00451891 /* Alamofire.swift */,
+				FEA502AD1AE4892A00451891 /* SwiftyJSON.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -249,10 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AC48FE1A8ABC45005DE77C /* SwiftyJSON.swift in Sources */,
 				85DD06121AA1404200401830 /* Colors.swift in Sources */,
 				85AC48D91A8ABAEC005DE77C /* ViewController.swift in Sources */,
-				85AC49001A8ABC4C005DE77C /* Alamofire.swift in Sources */,
+				FEA502AE1AE4892A00451891 /* Alamofire.swift in Sources */,
+				FEA502AF1AE4892A00451891 /* SwiftyJSON.swift in Sources */,
 				85AC48D71A8ABAEC005DE77C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

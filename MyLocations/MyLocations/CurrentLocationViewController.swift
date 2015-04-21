@@ -72,7 +72,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     func locationManager(manager: CLLocationManager!,
         didUpdateLocations locations: [AnyObject]!) {
-            let newLocation = locations.last as CLLocation
+            let newLocation = locations.last as! CLLocation
             println("didUpdateLocations \(newLocation)")
             
             location = newLocation
@@ -82,7 +82,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     func updateLabels(){
         
-        let points = (self.tabBarController as CustomTabBarController).points
+        let points = (self.tabBarController as! CustomTabBarController).points
         if let location = location{
             latitudeLabel.text = String(format: "%.8f", location.coordinate.latitude)
             longitudeLabel.text = String(format: "%.8f", location.coordinate.longitude)
