@@ -16,6 +16,8 @@
 		85B0543C1A7FF98700B60421 /* Swift_Color_Game_for_KidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0543B1A7FF98700B60421 /* Swift_Color_Game_for_KidsTests.swift */; };
 		85B054471A801B0B00B60421 /* thumbs_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B054451A801B0B00B60421 /* thumbs_down.png */; };
 		85B054481A801B0B00B60421 /* thumbs_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B054461A801B0B00B60421 /* thumbs_up.png */; };
+		FE031A761AE606E900FDA934 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE031A751AE606E900FDA934 /* Colors.swift */; };
+		FE031AD91AE71C0C00FDA934 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE031AD81AE71C0C00FDA934 /* colors.swift */; };
 		FE6F89591AE1A6ED0083EC9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F89581AE1A6ED0083EC9D /* Alamofire.swift */; };
 		FE6F895B1AE1A7970083EC9D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6F895A1AE1A7970083EC9D /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		85B0543B1A7FF98700B60421 /* Swift_Color_Game_for_KidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Color_Game_for_KidsTests.swift; sourceTree = "<group>"; };
 		85B054451A801B0B00B60421 /* thumbs_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbs_down.png; sourceTree = "<group>"; };
 		85B054461A801B0B00B60421 /* thumbs_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbs_up.png; sourceTree = "<group>"; };
+		FE031A751AE606E900FDA934 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FE031AD81AE71C0C00FDA934 /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 		FE6F89581AE1A6ED0083EC9D /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		FE6F895A1AE1A7970083EC9D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +107,7 @@
 		85B054231A7FF98600B60421 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE031AD81AE71C0C00FDA934 /* colors.swift */,
 				85B054451A801B0B00B60421 /* thumbs_down.png */,
 				85B054461A801B0B00B60421 /* thumbs_up.png */,
 				85B054241A7FF98600B60421 /* Info.plist */,
@@ -122,6 +127,7 @@
 		85B054391A7FF98700B60421 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE031A751AE606E900FDA934 /* Colors.swift */,
 				85B0543A1A7FF98700B60421 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -231,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85B054281A7FF98600B60421 /* ViewController.swift in Sources */,
+				FE031AD91AE71C0C00FDA934 /* colors.swift in Sources */,
 				FE6F89591AE1A6ED0083EC9D /* Alamofire.swift in Sources */,
 				85B054261A7FF98600B60421 /* AppDelegate.swift in Sources */,
 				FE6F895B1AE1A7970083EC9D /* SwiftyJSON.swift in Sources */,
@@ -242,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85B0543C1A7FF98700B60421 /* Swift_Color_Game_for_KidsTests.swift in Sources */,
+				FE031A761AE606E900FDA934 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

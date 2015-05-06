@@ -32,7 +32,7 @@ class SecondViewController: UIViewController {
         
         //3
         let annotation = MKPointAnnotation()
-        annotation.setCoordinate(location)
+        annotation.coordinate = location
         annotation.title = ""
         annotation.subtitle = ""
         mapView.addAnnotation(annotation)

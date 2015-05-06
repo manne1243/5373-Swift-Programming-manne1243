@@ -19,17 +19,17 @@ class LocationDetailsViewController: UITableViewController {
 
   var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
   var placemark: CLPlacemark?
+    var managedObjectContext: NSManagedObjectContext!
     var date = NSDate()
 
   var descriptionText = ""
   var categoryName = "No Category"
-var managedObjectContext: NSManagedObjectContext!
 
   @IBAction func done() {
     let hudView = HudView.hudInView(navigationController!.view, animated: true)
     hudView.text = "Tagged"
-    // 1
-    let location = NSEntityDescription.insertNewObjectForEntityForName( "Location", inManagedObjectContext: managedObjectContext) as Location
+        // 1
+    let location = NSEntityDescription.insertNewObjectForEntityForName( "Location", inManagedObjectContext: managedObjectContext) as! Location
     // 2
     location.locationDescription = descriptionText
     location.category = categoryName
@@ -40,11 +40,14 @@ var managedObjectContext: NSManagedObjectContext!
     // 3
     var error: NSError?
     if !managedObjectContext.save(&error) {
-            println("Error: \(error)")
-            abort() }
-
+       fatalCoreDataError(error)
+        return
+        //  println("Error: \(error)")
+       // abort()
+    }
+    
     afterDelay(0.6) {
-      self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
   }
   
@@ -135,13 +138,13 @@ var managedObjectContext: NSManagedObjectContext!
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "PickCategory" {
-      let controller = segue.destinationViewController as CategoryPickerViewController
+      let controller = segue.destinationViewController as! CategoryPickerViewController
       controller.selectedCategoryName = categoryName
     }
   }
   
   @IBAction func categoryPickerDidPickCategory(segue: UIStoryboardSegue) {
-    let controller = segue.sourceViewController as CategoryPickerViewController
+    let controller = segue.sourceViewController as! CategoryPickerViewController
     categoryName = controller.selectedCategoryName
     categoryLabel.text = categoryName
   }

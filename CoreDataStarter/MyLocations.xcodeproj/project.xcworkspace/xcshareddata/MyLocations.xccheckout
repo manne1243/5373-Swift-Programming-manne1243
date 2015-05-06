@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>432C5BDF-973C-4FC3-93E6-C9FC77551E5D</string>
+	<string>F94C1AAB-9A67-4793-A42B-A9F17B352DC5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MyLocations</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,6 +14,8 @@
 		<string>https://github.com/manne1243/5373-Swift-Programming-manne1243.git</string>
 		<key>1209B2A30B1DA1FF94CCA92428D258D39D448F96</key>
 		<string>https://github.com/rugbyprof/5373-Swift-Programming.git</string>
+		<key>EB86BD1B927121C25EFC970B2F340757A501B7AB</key>
+		<string>https://github.com/manne1243/5373-Swift-Programming-manne1243</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CoreDataStarter/MyLocations.xcodeproj</string>
@@ -23,6 +25,8 @@
 		<string>../../..</string>
 		<key>1209B2A30B1DA1FF94CCA92428D258D39D448F96</key>
 		<string>../../../../5373-Swift-Programming</string>
+		<key>EB86BD1B927121C25EFC970B2F340757A501B7AB</key>
+		<string>../../../../IOS%20Programs</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/manne1243/5373-Swift-Programming-manne1243.git</string>
@@ -47,6 +51,14 @@
 			<string>0FAC76334BE1468661971546222B1A587B20B409</string>
 			<key>IDESourceControlWCCName</key>
 			<string>5373-Swift-Programming-manne1243</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EB86BD1B927121C25EFC970B2F340757A501B7AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS%20Programs</string>
 		</dict>
 	</array>
 </dict>

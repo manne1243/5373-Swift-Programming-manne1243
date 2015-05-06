@@ -14,7 +14,7 @@
 		<string>https://github.com/manne1243/5373-Swift-Programming-manne1243.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MyLocations/MyLocations.xcodeproj</string>
+	<string>MyLocations.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0FAC76334BE1468661971546222B1A587B20B409</key>
@@ -34,7 +34,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>0FAC76334BE1468661971546222B1A587B20B409</string>
 			<key>IDESourceControlWCCName</key>
-			<string>5373-Swift-Programming-manne1243</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0FAC76334BE1468661971546222B1A587B20B409</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyLocations</string>
 		</dict>
 	</array>
 </dict>

@@ -9,6 +9,17 @@
 import UIKit
 import CoreData
 
+let MyManagedObjectContextSaveDidFailNotification = "MyManagedObjectContextSaveDidFailNotification"
+
+func fatalCoreDataError(error: NSError?) {
+    if let error = error {
+        println("*** Fatal error: \(error), \(error.userInfo)")
+    }
+    NSNotificationCenter.defaultCenter().postNotificationName(
+        MyManagedObjectContextSaveDidFailNotification, object: error)
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             {
                 let coordinator = NSPersistentStoreCoordinator( managedObjectModel: model)
                 let urls = NSFileManager.defaultManager().URLsForDirectory( .DocumentDirectory, inDomains: .UserDomainMask)
-                let documentsDirectory = urls[0] as NSURL
+                let documentsDirectory = urls[0] as! NSURL
                 let storeURL = documentsDirectory.URLByAppendingPathComponent("DataStore.sqlite")
                 println(storeURL)
                 var error:NSError?
@@ -41,16 +52,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             println("Could not find data model in app bundle")
         }
         abort() }()
-        
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    let tabBarController = window!.rootViewController
-        as UITabBarController
-    if let tabBarViewControllers = tabBarController.viewControllers { let currentLocationViewController =
-        tabBarViewControllers[0] as CurrentLocationViewController
-        currentLocationViewController.managedObjectContext = managedObjectContext
+    func listenForFatalCoreDataNotifications() {
+        // 1
+        NSNotificationCenter.defaultCenter().addObserverForName(
+            MyManagedObjectContextSaveDidFailNotification, object: nil,
+            queue: NSOperationQueue.mainQueue(),
+            usingBlock: { notification in
+                // 2
+                let alert = UIAlertController(title: "Internal Error", message:
+                    "There was a fatal error in the app and it cannot continue.\n\n"
+                        + "Press OK to terminate the app. Sorry for the inconvenience.",
+                    preferredStyle: .Alert)
+                // 3
+                let action = UIAlertAction(title: "OK", style: .Default) { _ in
+                    let exception = NSException(
+                        name: NSInternalInconsistencyException,
+                        reason: "Fatal Core Data error", userInfo: nil)
+                    exception.raise()
+                }
+                alert.addAction(action)
+                // 4
+                self.viewControllerForShowingAlert().presentViewController(
+                    alert, animated: true, completion: nil)
+        })
     }
-    // Override point for customization after application launch.
-    return true
+    // 5
+    func viewControllerForShowingAlert() -> UIViewController {
+        let rootViewController = self.window!.rootViewController!
+        if let presentedViewController =
+            rootViewController.presentedViewController {
+                return presentedViewController
+        } else {
+            return rootViewController
+        }
+    }
+
+
+  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    
+        let tabBarController = window!.rootViewController
+            as! UITabBarController
+        if let tabBarViewControllers = tabBarController.viewControllers {
+            
+            let currentLocationViewController = tabBarViewControllers[0] as! CurrentLocationViewController
+            currentLocationViewController.mangedObjectContext = managedObjectContext
+            
+    }
+        // Override point for customization after application launch.
+    listenForFatalCoreDataNotifications()
+        return true
+
   }
 
   func applicationWillResignActive(application: UIApplication) {
